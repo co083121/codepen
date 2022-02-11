@@ -1,0 +1,51 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.pg1 {
+	margin: 20px;
+}
+.row1 {
+	display: flex;
+	margin: 20px;
+}
+.row2 {
+	margin: 0 20px;
+}
+.row1 .column {
+	width: 100%;
+	padding: 50px;
+	text-align: center;
+	font-size: 25px;
+	cursor: pointer;
+	color: #fff;
+}
+.row1 div:nth-child(1) ,#b1 {
+	background: green;
+}
+.row1 div:nth-child(2),#b2 {
+	background: red;
+}
+.row1 div:nth-child(3),#b3 {
+	background: blue;
+}
+.row2 .containerTab {
+	display: none;
+	padding: 20px;
+	color: #fff;
+	position: relative;
+}
+.row2 .containerTab .closebtn {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	color: #fff;
+	font-size: 35px;
+	cursor: pointer;
+}
+@media screen and (max-width: 750px){
+	.row1 {
+		flex-direction: column;
+	}
+}

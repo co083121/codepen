@@ -1,0 +1,108 @@
+<head>
+	<link rel="stylesheet" href="./index.css">
+</head>
+<body>
+	<div id="overlay" onclick="off()">
+	<div id="text">
+		overlay text
+	</div>
+</div>
+<div>
+	hello
+</div>
+<button onclick="on()">
+	on
+</button>
+<button onclick="off()">
+	off
+</button>
+<body class="orange">
+		<div class="demo-header"><h1>Animation for displaying lists using CSS3</h1></div>
+		<div class="ads-3">
+		
+		</div>
+		<div class="ads-1">
+		
+		</div>
+		<div class="demo-ct">
+			<h1><a href="#without-animation">Without animation</a></h1>
+			<div class="demo_desc">
+			</div>
+			<div class="divP">
+				<ul class="no-animation" id="no-animation">
+					<li>list 1</li>
+					<li>list 2</li>
+					<li>list 3</li>
+					<li>list 4</li>
+					<li>list 5</li>
+				</ul>
+				<input type="button" id="no-effect" value="Animate">
+			</div>
+
+			<h1><a href="#from-left">Sliding from left</a></h1>
+			<div class="demo_desc">
+				For this I prefer ease animation with a duration of 0.4 seconds and the list will slide from left outside to right viewport. You can notice that when clicking animate button, all the items in the list slides to viewport at once. This is one type of animation by sliding all the items at the same time. 
+			</div>
+			<div class="divP">
+				<ul class="slide-animation" id="slide-animation">
+					<li>list 1</li>
+					<li>list 2</li>
+					<li>list 3</li>
+					<li>list 4</li>
+					<li>list 5</li>
+				</ul>
+				<input type="button" id="slide-effect" value="Animate">
+			</div>
+			
+			<h1><a href="#one-by-one">sliding from left one by one</a></h1>
+			<div class="demo_desc">
+				For this animation also I prefer ease animation like first one. But added a small delay 400ms between list items. You can notice that when clicking animate button, the items in list slides from outside left to viewport one by one with a small delay. 
+			</div>
+			<div class="divP">
+				<ul class="one-by-one" id="one-by-one">
+					<li>list 1</li>
+					<li>list 2</li>
+					<li>list 3</li>
+					<li>list 4</li>
+					<li>list 5</li>
+				</ul>
+				<input type="button" id="one-effect" value="Animate">
+			</div>
+
+			<h1><a href="#slide-top">Sliding from top</a></h1>
+			<div class="demo_desc">
+				In this animation list items slides from top. You can notice that when clicking animate button, the items started sliding as a group from top and moved downwards. Once the item reaches its position it will stop sliding and remaining items will slide further. 
+			</div>
+			<div class="divP">
+				<ul class="top-translate" id="top-translate">
+					<li>list 1</li>
+					<li>list 2</li>
+					<li>list 3</li>
+					<li>list 4</li>
+					<li>list 5</li>
+				</ul>
+				<input type="button" id="trans-effect" value="Animate">
+			</div>
+
+			<h1><a href="#slide-top-s">Sliding from top with scaling</a></h1>
+			<div class="demo_desc">
+				In this animation also list items slides from top. You can notice that when clicking animate button, the items started sliding as a group from top and moved downwards. With additional scaling property it works like items are scaled small size while starting from top and growing as big when moving downwards. Once the item reaches its position it will be at maximum size and remaining items will slide further 
+			</div>
+			<div class="divP">
+				<ul class="top-scale" id="top-scale">
+					<li>list 1</li>
+					<li>list 2</li>
+					<li>list 3</li>
+					<li>list 4</li>
+					<li>list 5</li>
+				</ul>
+				<input type="button" id="scale-effect" value="Animate">
+			</div>
+		</div>
+		<div class="ads-2">
+		
+		</div>
+		<div class="clear"></div>
+	</body>
+</body>
+<script type="text/javascript" src="./index.js"></script>

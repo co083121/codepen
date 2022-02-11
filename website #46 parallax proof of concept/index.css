@@ -1,0 +1,36 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.parallax {
+	width: 100%;
+	min-height: 300px;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic1 {
+	background-image: url(http://bit.ly/2H02x7l);
+}
+.pic2 {
+	background-image: url(http://bit.ly/2tfIXSr);
+}
+.pic3 {
+	background-image: url(http://bit.ly/2oOKfOJ);
+}
+.pic4 {
+	background-image: url(http://bit.ly/2H2630S);
+}
+.box {
+	background-color: red;
+	font-size: 36px;
+}
+/*
+
+https://www.w3schools.com/howto/howto_css_parallax.asp
+
+
+
+*/

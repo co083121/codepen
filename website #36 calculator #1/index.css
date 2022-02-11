@@ -1,0 +1,38 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+pre {
+	font-family: helvetica;
+	font-weight: bold;
+	font-size: 2em;
+}
+div input {
+	margin-bottom: 10px;
+	width: 85px;
+	text-align: right;
+}
+div button {
+	width: 20px;
+}
+body {
+	display: flex;
+}
+body > div {
+	display: inline-block;
+	padding: 10px;
+}
+body > div:nth-child(1) {
+	background-color: #456;
+	border-radius: 10px;
+}
+body > div:nth-child(2) {
+	margin-left: 20px;
+	background-color: #555;
+}
+body > div:nth-child(2) p {
+	display: inline-block;
+	font-size: 28px;
+	color: #fff;
+}

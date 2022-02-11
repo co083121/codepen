@@ -1,0 +1,42 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--hourpct: 0;
+	--minutepct: 0;
+	--secondpct: 0;
+}
+.barclock {
+	border: 1px solid gray;
+	margin: 1em;
+	padding: 10px;
+	position: relative;
+	overflow: hidden;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+div.barclock:after {
+	content: '';
+	position: absolute;
+	background: red;
+	width: 100%;
+	height: 100%;
+	left: -100%;
+	top: 0;
+	z-index: -1;
+	transform: translate3d(0,0,0);
+}
+div#hour:after {
+	background: #00b9f1;
+	transform: translate3d(calc(var(--hourpct) * 100%),0,0);
+}
+div#minute:after {
+	background: #f9c00c;
+	transform: translate3d(calc(var(--minutepct) * 100%),0,0);
+}
+div#second:after {
+	background: #75d701;
+	transform: translate3d(calc(var(--secondpct) * 100%),0,0);
+}

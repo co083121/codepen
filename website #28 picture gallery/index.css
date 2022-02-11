@@ -1,0 +1,21 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+/*counters********************/
+
+/*flexbox********************/
+body > div {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: DodgerBlue;
+}
+div div {
+	background-color: #f1f1f1;
+	width: 100px;
+	margin: 10px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+}

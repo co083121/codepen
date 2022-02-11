@@ -1,0 +1,144 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	display: flex;  
+	flex-flow: row wrap;
+	font-weight: bold;
+	text-align: center;
+}
+body > * {
+	padding: 10px;
+	flex: 1 100%;
+}
+.header {
+	background: tomato;
+}
+.navigation .navcir {
+	width: 25px;
+	height: 25px;
+	background-color: #ccc;
+	margin-right: auto;
+	border-radius: 50%;
+}
+.navigation {
+	list-style: none;
+	margin: 0;
+	background: blue;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: flex-end;
+}
+.navigation a {
+	text-decoration: none;
+	display: block;
+	padding: 1em;
+	color: white;
+}
+.navigation a:hover {
+	background: #00b7f5;
+}
+.main {
+	background: deepskyblue;
+	text-align: center;
+}
+.main .gallery {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.main .gallery img {
+	width: 150px;
+	height: 200px;
+	margin: 10px; 
+	border-radius: 10px;
+	box-shadow: 4px 7px 45px -10px rgba(0,0,0,0.4);
+}
+.aside-1 {
+	background: gold;
+}
+.aside-2 {
+	background: hotpink;
+}
+.footer {
+	background: #5b9eed;
+}
+.footer .list-wrapper {
+	width: 90%;
+	max-width: 400px;
+	margin: 30px auto;
+}
+.footer .list {
+	background-color: #fff;
+	list-style: none;
+	padding: 15px;
+	border-radius: 5px;
+	box-shadow: 0 5px 10px black;
+}
+.footer .list-item__image img {
+	border: 1px solid black;
+	border-radius: 50%;
+}
+.footer .list .list-item {
+	display: flex;
+	padding: 10px 5px;
+}
+.footer .list .list-item:not(:last-child) {
+	border-bottom: 1px solid black;
+}
+.footer .list .list-item__image {
+	flex-shrink: 0;
+}
+.footer .list .list-item__content {
+	flex-grow: 1;
+	padding: 0 20px;
+}
+.footer .list .list-item__content h4 {
+	font-size: 18px;
+	margin-top: 15px;
+}
+.footer .list .list-item__content p {
+	margin-top: 5px;
+	color: #aaa;
+}
+@media all and (min-width: 600px) {
+	.aside { flex: 1 auto; }
+}
+@media all and (min-width: 800px) {
+	.main    { flex: 3 0px; }
+	.aside-1 { order: 1; } 
+	.main    { order: 2; }
+	.aside-2 { order: 3; }
+	.footer  { order: 4; }
+}
+@media all and (max-width: 800px) {
+	.navigation {
+		justify-content: space-around;
+	}
+}
+@media all and (max-width: 600px) {
+	.navigation {
+		flex-flow: column wrap;
+		padding: 0;
+	}
+	.navcir {
+		margin: auto;
+	}
+	.navigation a {
+		text-align: center;
+		padding: 10px;
+		border-top: 1px solid rgba(255, 255, 255, 0.3);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	}
+
+	.navigation li:last-of-type a {
+		border-bottom: none;
+	}
+}

@@ -1,0 +1,112 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.border {
+	border: 1px solid #000;
+}
+button:hover {
+	background: rgba(0, 0, 0, 0.3);
+}
+button {
+	position: absolute;
+	font-size: 1em;
+	line-height: 1.5;
+	bottom: 20em;
+	border-radius: 50%;
+	z-index: 9;
+	border: none;
+	overflow: hidden;
+	height: 1.5em;
+	width: 1.5em;
+	line-height: 2;
+}
+button:first-of-type {
+  left: 0.75em;
+}
+button:last-of-type {
+  right: 0.75em;
+}
+.arrow {
+  border: 0;
+  border-top: 0.375em solid transparent;
+  border-bottom: 0.375em solid transparent;
+  display: inline-block;
+  margin-bottom: 0.25em;
+}
+.arrow-left {
+  border-right: 0.5em solid currentColor;
+  margin-right: 0.25em;
+}
+.arrow-right {
+  border-left: 0.5em solid currentColor;
+  margin-left: 0.25em;
+}
+header {
+	
+}
+header div {
+	
+}
+header div section {
+	
+}
+header div section figure {
+	position: relative;
+	width: 100%;
+}
+header div section figure img {
+	width: 100%;
+}
+header div section figure div {
+	background-color: rgba(255,193,7,0.7);
+	position: absolute;
+	bottom: 40px;
+	width: 300px;
+}
+header div section figure div h2 {
+	
+}
+header div section figure div p {
+	
+}
+main {
+	
+}
+main div {
+	display: flex;
+	padding: 0 20px;
+	margin: 50px 0;
+}
+main div section {
+	width: 50%;
+}
+main div section figure {
+	padding: 0 20px;
+	margin: 10px 0;
+}
+main div section figure img {
+	width: 100%;
+	border-top: solid 5px rgba(255,193,7);
+}
+main div section figure div {
+	display: block;
+}
+main div section figure div h1 {
+	margin: 10px 0;
+}
+main div section figure div p {
+	margin: 20px 0;
+}
+@media only screen and  (max-width: 600px) {
+	main div {
+		flex-direction: column;
+	}
+	main div section {
+		width: 100%;
+	}
+	header div section figure div {
+		display: none;
+	}
+}

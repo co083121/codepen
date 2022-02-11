@@ -1,0 +1,33 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.photo-row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.photo-column {
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+}
+.photo-column img {
+	margin-top: 8px;
+	vertical-align: middle;
+}
+@media (max-width: 800px) {
+	.photo-column {
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+@media (max-width: 600px) {
+	.photo-column {
+		flex: 100%;
+		max-width: 100%;
+	}
+}

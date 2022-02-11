@@ -1,0 +1,148 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+}
+/*
+
+block level elements
+
+*/
+.bar {
+	background-color: #292b2c;
+	padding: 8px 16px;
+	display: flex;
+}
+main {
+	display: flex;
+	flex-direction: column;
+}
+nav {
+	flex: auto;
+}
+/*
+bar
+*/
+h1 {
+	color: #fff;
+	padding: 10px;
+}
+ul {
+	display: flex;
+	flex: auto;
+	list-style: none;
+}
+ul li:last-child {
+	margin-left: auto;
+	margin-right: 20px;
+}
+ul li a {
+	color: #fff;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+}
+/*
+main
+*/
+.cards {
+	background-color: #8e44ad;
+	min-width: 100%;
+	min-height: 200px;
+	overflow-x: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.cards--content:hover {
+	position: relative;
+	background-color: #fff;
+	transform: scale(1.2);
+}
+.cards--content {
+	background-color: #e74c3c;
+	min-width: 100px;
+	min-height: 100px;
+	margin: 5px;
+	transition: transform 0.5s;
+}
+/*
+footer
+*/
+#foot {
+	align-items: center;
+	background: #456;
+	padding: 20px;
+}
+.foot-bar {
+	display: flex;
+	width: 100%;
+}
+.icon {
+	background-color: #ccc;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	margin-right: 10px;
+}
+.username {
+	font-family: sans-serif;
+	font-weight: bold;
+	margin-right: 10px;
+}
+.search {
+	flex: 1;
+}
+.search input {
+	border: 1px solid #555;
+	border-radius: 3px;
+	padding: 3px;
+	width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+	.bar nav ul li:not(:first-child) {
+		display: none;
+	}
+	.bar nav ul li:last-child {
+		display: inline-block;
+		margin-left: auto;
+	}
+}
+@media (max-width: 650px) {
+	.foot-bar {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.icon {
+		order: 0;
+	}
+	.username {
+		order: 1;
+		margin: 15px;
+		text-align: center;
+		width: 100%;
+	}
+	.search {
+		order: 2;
+		width: 100%;
+	}
+}
+
+/*
+I came along to church yesterdsy,my son Zach has Aspergers and doesn't have any Christian friends,he like the service yesterday and is interested in the bowling and board game noghts.If somebody reached out it may help him be more inclined to come as he is shy..His cell no is 239-682-9556.Thank you .
+8/21/2017 2:37 PM
+*/
+
+
+
+
+/*
+police report number
+17-21035
+*/

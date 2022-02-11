@@ -1,0 +1,90 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/**************************************counters*/
+body {
+	counter-reset: pages;
+}
+a {
+	counter-increment: pages;
+}
+a::before {
+	content: counter(pages);
+}
+/**************************************styles*/
+body {
+	margin: 32px;
+	font: 700 32px/1 'Droid Sans', sans-serif;
+	color: #fff;
+	background-color: #3f4b58;
+}
+div[id*="a"] {
+	height: 100px;
+	width: 1200px;
+	margin: 10px;
+	background-color: #555;
+}
+h1 {
+	margin: 0 0 32px;
+	font-size: 48px;
+}
+h2 {
+	margin: 0 0 8px 8px;
+	font-size: inherit;
+}
+.pgntn {
+	margin-bottom: 16px;
+	padding: 16px;
+	border-radius: 4px;
+	overflow: hidden;
+	background-color: rgba(255, 255, 255, .1);
+}
+.pgntn a {
+	float: left;
+	width: 32px;
+	margin: 8px;
+	padding: 8px;
+	border-radius: 4px;
+	border: solid 2px rgba(255, 255, 255, .4);
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	background-color: rgba(255, 255, 255, .2);
+	transition: all .1s;
+}
+.pgntn a:hover {
+	border: solid 2px #fff;
+	background-color: rgba(255, 255, 255, .4);
+	box-shadow: 0 0 10px #fff;
+}
+/***********************************************************	A1*/
+.grid-a1 {
+	display: flex;
+	flex-wrap: wrap;
+	background: #353432;
+}
+.col-a1 {
+	width: calc(50% - 20px);
+	margin: 10px 10px 20px 10px;
+	padding: 10px;
+	border-top: 10px solid #FE8B05;
+	background: #fff;
+}
+p {
+	color: #000;
+}
+/***********************************************************	A2*/
+.grid-a2 {
+	display: grid;
+	grid-gap: 20px;
+	grid-auto-rows: minmax(100px, auto);
+	grid-template-columns: 1fr 1fr;
+}
+.col-a2 {
+	padding: 20px;
+	background: #353432;
+	border-top: 10px solid #FE8B05;
+}

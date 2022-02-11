@@ -2,6 +2,49 @@
 	<link rel="stylesheet" href="./index.css">
 </head>
 <body>
-	
+	<table cellspacing="0" border="1">
+	<tr>
+		<th>Quantity</th>
+		<th>Item</th>
+		<th>Price</th>
+	</tr>
+	<tr>
+		<td><button onclick="minus_num1()">-</button><input type="text" id="txt1" name="name" readonly value="0"><button onclick="add_num1()">+</button></td>
+		<td>The Zombie Survival Guide: Complete Protection from the Living Dead</td>
+		<td><input type="text" id="price1" name="cost" value="13.95"></td>
+	</tr>
+	<tr>
+		<td><button onclick="minus_num2()">-</button><input type="text" id="txt2" name="name" readonly value="0"><button onclick="add_num2()">+</button></td>
+		<td>Gerber Apocalypse Kit</td>
+		<td><input type="text" id="price2" name="cost" value="349.00" readonly></td>
+	</tr>
+	<tr>
+		<td><button onclick="minus_num3()">-</button><input type="text" id="txt3" name="name" readonly value="0"><button onclick="add_num3()">+</button></td>
+		<td>Kookaburra BIG Kahuna 2010 Cricket Bat</td>
+		<td><input type="text" id="price3" name="cost" value="189.95" readonly></td>
+	</tr>
+	<tr>
+		<td><button onclick="minus_num4()">-</button><input type="text" id="txt4" name="name" readonly value="0"><button onclick="add_num4()">+</button></td>
+		<td>40" Samurai Sword</td>
+		<td><input type="text" id="price4" name="cost" value="159.00" readonly></td>
+	</tr>
+	<tr>
+		<td colspan="2">Subtotal</td>
+		<td><input type="text" id="subtot" name="cost" value="711.19" readonly></td>
+	</tr>
+	<tr>
+		<td colspan="2">Tax (7%)</td>
+		<td><input type="text" id="tax" name="cost" value="$49.78" readonly></td>
+	</tr>
+	<tr>
+		<td colspan="2">Shipping &amp; Handling</td>
+		<td><input type="text" id="ship" name="cost" value="$25.00" readonly></td>
+	</tr>
+	<tr>
+		<td colspan="2">Total</td>
+		<td><input type="text" id="tot" name="cost" value="$785.97" readonly></td>
+	</tr>
+</table>
+<p id="demo">a</p>
 </body>
 <script type="text/javascript" src="./index.js"></script>

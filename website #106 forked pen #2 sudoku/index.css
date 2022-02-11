@@ -3,3 +3,121 @@
 	margin: 0;
 	padding: 0;
 }
+	/*this is scss*/
+html { font-size: 15px; }
+* { box-sizing: border-box; }
+input { display: none; }
+.grid {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+.grid > * {
+  position: absolute;
+  width: 33.33%;
+  height: 33.33%;
+}
+.grid > :nth-child(3n+1) { left: 0; }
+.grid > :nth-child(3n+2) { left: 33.33%; }
+.grid > :nth-child(3n+3) { left: 66.67%; right: 100%; }
+.grid > :nth-child(-n+3) { top: 0%; }
+.grid > :nth-child(n+4):nth-child(-n+6) { top: 33.33%; }
+.grid > :nth-child(n+7) { top: 66.66%; bottom: 100%; }
+
+.cells { margin: 2em; width: 36em; height: 36em; border: 2px solid; position: relative; }
+.block { border: 1px solid; }
+.cell { border: 1px solid; }
+
+/* Hints */
+.hint { display: flex; justify-content: center; align-items: center;}
+.hintv { flex: 1; text-align: center; }
+.hintv::before { content: attr(val); }
+// Unchecked hints are possible. Checked hints are ruled out.
+.hint { opacity: .4; }
+:checked + .hintv { opacity: 0; }
+.cell:hover {
+  .hint { opacity: 1; }
+  :checked + .hintv { opacity: .2; }
+}
+
+/* Values */
+.values { display: none; }
+#setvals:checked ~ .cells .cell:hover .values {
+  display: block;
+}
+.values {
+  color: blue;
+  background: white;
+}
+.value { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+.value::before {
+  content: attr(val);
+}
+@for $n from 1 through 81 {
+  // Once a cell has a value set, perma-show its values block and hide the other values.
+  input[num="#{$n}"]:checked ~ .cells [num="#{$n}"]{
+    &.value { display: none; }
+    &.values { display: flex; }
+  } 
+  @for $v from 1 through 9 {
+    // Style the set value properly to make it big and obvious.
+    ##{"n"+$n+"v"+$v}:checked ~ .cells .value[for=#{"n"+$n+"v"+$v}] {
+      display: flex;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      font-size: 2.5em;
+    }
+  }
+}
+@for $v from 1 through 9 {
+  @for $b from 1 through 9 {
+    // Hide hints and value selections in a block for an already-selected value.
+    input[block="#{$b}"][val="#{$v}"]:checked ~ .cells [block="#{$b}"][val="#{$v}"] {
+      &.hintv, &.value {
+        display: none;
+      }
+    }
+  }
+  // Now do the same for columns.
+  @for $col from 1 through 9 {
+    input[col="#{$col}"][val="#{$v}"]:checked ~ .cells [col="#{$col}"][val="#{$v}"] {
+      &.hintv, &.value {
+        display: none;
+      }
+    }
+  }
+  // And for rows.
+  @for $row from 1 through 9 {
+    input[row="#{$row}"][val="#{$v}"]:checked ~ .cells [row="#{$row}"][val="#{$v}"] {
+      &.hintv, &.value {
+        display: none;
+      }
+    }
+  }
+}
+
+/* Buttons */
+.button {
+  background: silver;
+  padding: 2px 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor:pointer;
+  position: relative;
+}
+.button:active {
+  left: 2px; top: 2px;
+}
+#showhints:checked ~ [for=showhints],
+#setvals:checked   ~ [for=setvals] {
+  background: #44f;
+  color: white;
+}
+  

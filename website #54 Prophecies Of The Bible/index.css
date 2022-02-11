@@ -1,5 +1,60 @@
 * {
 	box-sizing: border-box;
-	margin: 0;
 	padding: 0;
+	margin: 0;
 }
+body {
+	background-image: 
+}
+
+/*
+<img src="https://wels.net/wp-content/uploads/2018/12/700x411-FiC-Revelation.jpg" alt="Avatar" style="width:300px;height:300px;">
+*/
+button.tablink {
+	background-color: #555;
+	border: none;
+	cursor: pointer;
+	color: #fff;
+	font-size: 17px;
+	outline: none;
+	padding: 14px 16px;
+	width: 15%;
+}
+button.tablink:hover {
+	background-color: #777;
+}
+div.tabcontent {
+	color: #000;
+	display: none;
+	padding: 50px;
+	text-align: center;
+}
+div.tabcontent div.prop {
+	background-color: #777;
+	display: flex;
+	justify-content: center;
+}
+div.tabcontent div.prop p {
+	color: #fff;
+	background-color: #444;
+	margin-right: 5px;
+	padding: 10px;
+}
+div#mat {background-color:red;}
+div#mar {background-color:green;}
+div#luk {background-color:blue;}
+div#joh {background-color:orange;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

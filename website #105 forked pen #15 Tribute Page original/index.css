@@ -3,3 +3,28 @@
 	margin: 0;
 	padding: 0;
 }
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+h1 {
+    font-size:150px;
+    font-family:'Amatic SC', cursive;
+    text-align: center;
+}
+h2 {
+    font-size:50px;
+    font-family:'Amatic SC', cursive;
+    text-align: center;
+}
+ol {
+    font-size:40px;
+    font-family:'Amatic SC', cursive;
+}
+div {
+    background-color: aqua;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h6 {
+    font-size:20px;
+    font-family:'Amatic SC', cursive;
+  text-align: center;
+}

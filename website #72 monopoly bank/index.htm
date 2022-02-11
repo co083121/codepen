@@ -2,6 +2,76 @@
 	<link rel="stylesheet" href="./index.css">
 </head>
 <body>
-	
+	<h1>
+	monopoly bank
+</h1>
+<table border="1">
+	<tr>
+		<th colspan="8">player 1</th>
+	</tr>
+	<tr>
+		<th>value</th>
+		<td>$1</td>
+		<td>$5</td>
+		<td>$10</td>
+		<td>$20</td>
+		<td>$50</td>
+		<td>$100</td>
+		<td>$500</td>
+	</tr>
+	<tr>
+		<th>quantity</th>
+		<td>
+			<button onclick="add_num1()">+</button><br>
+			<input type="text" id="txt1" name="name" readonly value="0"><br>
+			<button onclick="minus_num1()">-</button><br>
+		</td>
+		<td>
+			<button onclick="add_num2()">+</button><br>
+			<input type="text" id="txt2" name="name" readonly value="0"><br>
+			<button onclick="minus_num2()">-</button><br>
+		</td>
+		<td>
+			<button onclick="add_num3()">+</button><br>
+			<input type="text" id="txt3" name="name" readonly value="0"><br>
+			<button onclick="minus_num3()">-</button><br>
+		</td>
+		<td>
+			<button onclick="add_num4()">+</button><br>
+			<input type="text" id="txt4" name="name" readonly value="0"><br>
+			<button onclick="minus_num4()">-</button><br>
+		</td>
+		<td>
+			<button onclick="add_num5()">+</button><br>
+			<input type="text" id="txt5" name="name" readonly value="0"><br>
+			<button onclick="minus_num5()">-</button><br>
+		</td>
+		<td>
+			<button onclick="add_num6()">+</button><br>
+			<input type="text" id="txt6" name="name" readonly value="0"><br>
+			<button onclick="minus_num6()">-</button><br>
+		</td>
+		<td>
+			<button onclick="add_num7()">+</button><br>
+			<input type="text" id="txt7" name="name" readonly value="0"><br>
+			<button onclick="minus_num7()">-</button><br>
+		</td>
+	</tr>
+	<tr>
+		<th>sub-total</th>
+		<td><input type="text" id="sub1" name="sub1" value="0" readonly></td>
+		<td><input type="text" id="sub2" name="sub2" value="0" readonly></td>
+		<td><input type="text" id="sub3" name="sub3" value="0" readonly></td>
+		<td><input type="text" id="sub4" name="sub4" value="0" readonly></td>
+		<td><input type="text" id="sub5" name="sub5" value="0" readonly></td>
+		<td><input type="text" id="sub6" name="sub6" value="0" readonly></td>
+		<td><input type="text" id="sub7" name="sub7" value="0" readonly></td>
+	</tr>
+	<tr>
+		<th colspan="8">
+			total:<input type="text" id="tot" name="tot" value="0" readonly>
+		</th>
+	</tr>
+</table>
 </body>
 <script type="text/javascript" src="./index.js"></script>

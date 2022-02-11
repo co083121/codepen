@@ -3,3 +3,123 @@
 	margin: 0;
 	padding: 0;
 }
+.grid1 {
+	display: grid;
+	grid-template-areas:
+		'header . . . . nav'
+		'main main main main main rig'
+		'footer footer footer footer footer footer';
+	grid-gap: 10px;
+	background-color: #2196f3;
+	padding: 10px;
+	grid-template-rows: 100px 50px 200px;
+}
+.grid1 > div {
+	background-color: rgba(255,255,255,0.8);
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
+}
+.grid1 .item1 {
+	grid-area: header;
+}
+.grid1 .item2 {
+	grid-area: nav;
+}
+.grid1 .item3 {
+	grid-area: main;
+}
+.grid1 .item4 {
+	grid-area: rig;
+}
+.grid1 .item5 {
+	grid-area: footer;
+}
+/*grid #2*/
+.grid2 {
+	margin-top: 30px;
+	display: grid;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	grid-template-columns: auto auto auto;
+	background-color: #2196f3;
+	padding: 10px;
+}
+.grid2 > div {
+	background-color: rgba(255,255,255,0.8);
+	border: 1px solid rgba(0,0,0,0.8);
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
+}
+/*grid #3*/
+.grid3 {
+	margin-top: 30px;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: auto auto auto;
+	background-color: #2196f3;
+	padding: 10px;
+}
+.grid3 > div {
+	background-color: rgba(255,255,255,0.8);
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
+}
+.grid3 .item1 {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.grid4 {
+	margin-top: 30px;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: auto auto auto;
+	background-color: #2196f3;
+	padding: 10px;
+}
+.grid4 > div {
+	background-color: rgba(255,255,255,0.8);
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
+}
+.grid4 .item1 {
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+.grid5 {
+	margin-top: 30px;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 80px 200px auto 30px;
+	/*grid-template-rows: 60px 200px;*/
+	background-color: #2196f3;
+	padding: 10px;
+}
+.grid5 > div {
+	background-color: rgba(255,255,255,0.8);
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
+}
+.grid6 {
+	margin-top: 30px;
+	display: grid;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	grid-template-columns: auto auto auto auto auto auto;
+	background-color: #2196f3;
+	padding: 10px;
+}
+.grid6 > div {
+	background-color: rgba(255,255,255,0.8);
+	border: 1px solid rgba(0,0,0,0.8);
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
+}
+.grid6 .item8 {
+	grid-area: 2/1/span 2/span 3;
+}

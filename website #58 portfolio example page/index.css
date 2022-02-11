@@ -3,3 +3,119 @@
 	margin: 0;
 	padding: 0;
 }
+/*================block-level================*/
+header {
+	color: #fff;
+	background: #171717;
+	height: 600px;
+}
+main {
+	
+}
+footer {
+	background: #171717;
+	color: #fff;
+	height: 225px;
+}
+/*================header================*/
+header {
+	display: inline-flex;
+	height: 80px;
+	max-width: 1000px;
+	margin: 0px auto;
+}
+header .title {
+	width: 1000px;
+	margin: 0px auto;
+}
+/*================main================*/
+main section:nth-child(1) {
+	height: 960px;
+}
+main section:nth-child(1) .pic-box {
+	width: 1000px;
+	margin: 0px auto;
+	padding: 10px 0;
+}
+main section:nth-child(1) .pic-box h3 {
+	text-align: center;
+}
+main section:nth-child(1) .pic-box p {
+	text-align: center;
+}
+main section:nth-child(1) .pic-box .pics {
+	display: flex;
+	flex-wrap: wrap;
+}
+main section:nth-child(2) {
+	background: #171717;
+	color: #fff;
+	height: 225px;
+}
+main section:nth-child(2) .space {
+	width: 1000px;
+	margin: 0px auto;
+}
+main section:nth-child(3) {
+	height: 630px;
+}
+main section:nth-child(3) .info {
+	width: 1000px;
+	margin: 0px auto;
+}
+/*================footer================*/
+footer .foot {
+	width: 1000px;
+	margin: 0px auto;
+}
+
+header h1 {
+	text-transform: uppercase;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+header nav {
+	margin-left: auto;
+}
+header nav ul {
+	list-style: none;
+	display: flex;
+	
+}
+header nav ul li {
+	
+}
+header nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	padding: 31px;
+}
+header nav ul li a:hover {
+	
+}
+header nav form {
+	display: none;
+}
+header nav form select {
+	background: #171717;
+	color: #fff;
+	padding: 10px;
+}
+.header .title {
+	
+}
+@media (max-width: 1000px) {
+	header nav ul {
+		display: none;
+	}
+	header nav form {
+		display: initial;
+	}
+}
+@media (max-width: 900px) {
+	header {
+		flex-direction: column;
+	}
+}

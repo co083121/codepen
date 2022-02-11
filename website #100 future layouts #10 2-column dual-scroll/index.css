@@ -3,3 +3,18 @@
 	margin: 0;
 	padding: 0;
 }
+body, html, .container {
+	height: 100%;
+}
+.container, .content {
+	display: flex;
+}
+.container {
+	flex-direction: column;
+}
+.content, .content div {
+	flex: 1;
+}
+.content div {
+	overflow: scroll;
+}

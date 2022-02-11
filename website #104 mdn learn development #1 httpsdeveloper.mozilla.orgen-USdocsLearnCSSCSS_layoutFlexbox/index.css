@@ -3,3 +3,56 @@
 	margin: 0;
 	padding: 0;
 }
+body {
+	font-family: var(--bdy-font);
+}
+:root {
+	--bdy-font: sans-serif;
+	--hd-bgcolor: purple;
+	--hd-height: 100px;
+	--hdr-h1color: #fff;
+}
+/*================universal================*/
+header {
+	background-color: var(--hd-bgcolor);
+	height: var(--hd-height);
+}
+/*================nav section================*/
+nav {
+	
+}
+/*================main section================*/
+main section {
+	background-color: #456;
+	flex-direction: column;
+	display: flex;
+}
+main section article {
+	padding: 10px;
+	margin: 10px;
+	background-color: aqua;
+}
+/*================header elements================*/
+header h1 {
+	text-align: center;
+	color: white;
+	line-height: 100px;
+	color: var(--hdr-h1color);
+}
+/*================main elements================*/
+main section article h2 {
+	text-align: center;
+}
+/*================footer elements================*/
+footer {
+	
+}
+/*================media queries================*/
+@media screen and (min-width: 1024px) {
+	header {
+		background: red;
+	}
+	main section {
+		flex-direction: row;
+	}
+}

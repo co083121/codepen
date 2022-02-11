@@ -1,5 +1,232 @@
+/*
+
+universal elements
+
+*/
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
+body,html {
+	height: 100%;
+	font-family: "Raleway", sans-serif;
+}
+.bgimg {
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center;
+	background-size: cover;
+	min-height: 100%;
+	position: relative;
+}
+/*
+
+block level elements
+
+*/
+header {
+	
+}
+nav {
+	background-color: rgba(255,255,255,.5);
+	border: 1px solid #ccc;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+main {
+	
+}
+footer {
+	background-color: #000;
+	color: #fff;
+	display: table;
+	padding: 16px 0;
+	table-layout: fixed;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 40px;
+}
+/*
+
+header elements
+
+*/
+header.pic1 {
+	background-image: url("https://bit.ly/2pmHliz");
+}
+header h1 {
+	font-size: 64px;
+}
+header h2 {
+	font-size: 32px;
+}
+header * {
+	color: #fff;
+	text-align: center;
+	padding: 10px 0;
+}
+.cen-block {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+/*
+
+nav elements
+
+*/
+nav ul {
+	display: flex;
+	flex-direction: row;
+}
+nav ul li {
+	border-left: 1px solid #fff;
+	border-right: 1px solid #ccc;
+	flex-grow: 1;
+	list-style: none;
+	text-align: center;
+}
+nav ul li a {
+	display: block;
+	text-decoration: none;
+	color: #000;
+	padding: 10px 0;
+}
+nav a:hover {
+	background-color: #999;
+}
+/*
+
+main elements
+
+*/
+main img {
+	width: 100%;
+}
+#us {
+	padding: 64px 16px;
+}
+#us h1 {
+	margin: 10px 0;
+	text-align: center;
+}
+#us img {
+	filter: grayscale(50%);
+	max-width: 1020px;
+	display: block;
+	margin: 32px auto
+}
+#us p {
+	margin: 0 auto;
+	max-width: 1000px;
+	line-height: 2;
+	text-align: center;
+}
+#us p a {
+	background-color: #000;
+	border-radius: 5px;
+	color: #ccc;
+	font-size: 18px;
+	padding: 12px 24px;
+	text-decoration: none;
+}
+#us p a:hover {
+	background-color: #ccc;
+	color: #000;
+}
+#invited h1 {
+	font-size: 64px;
+	color: #fff;
+}
+#invited h2 {
+	font-size: 32px;
+	color: #fff;
+	text-align: center;
+}
+#wedding {
+	padding: 64px 16px;
+}
+#wedding h1 {
+	margin: 10px 0;
+	text-transform: uppercase;
+	text-align: center;
+}
+#wedding img {
+	display: block;
+	filter: grayscale(50%);
+	margin: 64px auto;
+	max-width: 1000px;
+}
+#wedding .jar {
+	margin: 0 auto;
+	width: 1000px;
+	display: flex;
+	flex-direction: row;
+}
+#wedding .half {
+	width: 50%;
+	background-color: #ccc;
+}
+#rsvp {
+	padding: 16px 64px;
+}
+#rsvp h1 {
+	margin: 15px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+#rsvp p {
+	margin: 20px 0;
+	text-align: center;
+	text-transform: capitalize;
+}
+#rsvp button {
+	margin: 20px 0;
+	background-color: aqua;
+	border-radius: 5px;
+	color: #000;
+	cursor: pointer;
+	padding: 8px 60px;
+}
+.pic2 {
+	background-image: url("https://bit.ly/2qSfZBY");
+}
+#clickform {
+	display: none;
+}
+/*
+
+footer elements
+
+*//*
+footer p {
+	margin: 15px 0;
+}
+/*
+
+queries kframes
+
+*//*
+@media (max-width: 430px) {
+nav {
+	font-size: .8em;
+	width: 100%;
+	}
+	nav ul {
+		display: block;
+	}
+	header {
+		float: none;
+		width: 100%;
+	}
+nav ul li {
+	display: block;
+	border-bottom: 1px solid #ccc;
+	}
+}
+/*
+https://www.w3schools.com/w3css/tryw3css_templates_wedding.htm

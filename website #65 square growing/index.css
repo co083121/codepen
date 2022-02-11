@@ -3,3 +3,87 @@
 	margin: 0;
 	padding: 0;
 }
+/*
+.parent {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 800px;
+	height: 400px;
+	background: #ccc;
+}
+.child {
+	background: coral;
+	padding: 1rem;
+	margin: 2px;
+	width: 100px;
+	height: 100px;
+}
+h2 {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.parent {
+	background-image: url("https://www.w3schools.com/howto/img_nature_wide.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: fixed;
+	background-size: 800px 400px;
+}*/ /* picture */
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid black;
+	height: 200px;
+	width: 200px;
+	perspective: 8px;
+	perspective-origin: 50%;
+}
+.element {
+	height: 100px;
+	width: 100px;
+	background: red;
+	transform: translatez(0px);
+	animation: animatez 2s infinite;
+}
+@keyframes animatez {
+	from {
+		transform: translatez(0px);
+	}
+	to {
+		transform: translatez(4px);
+	}
+}
+/*
+https://keithclark.co.uk/articles/practical-css-parallax/
+https://css-tricks.com/tour-performant-responsive-css-site/
+https://css-tricks.com/an-overview-of-scroll-technologies/
+https://css-tricks.com/practical-css-scroll-snapping/
+https://keithclark.co.uk/articles/pure-css-parallax-websites/
+https://freefrontend.com/css-parallax/
+https://developers.google.com/web/updates/2016/12/performant-parallaxing
+https://medium.com/@dailyfire/pure-css-parallax-simple-tricks-da102d0ffdb9
+https://cssanimation.rocks/parallax/
+https://www.w3schools.com/howto/howto_css_parallax.asp
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax
+
+
+
+*/
+div:nth-of-type(1) > div:nth-child(1) {
+	color:#f00;
+	transition: all 1s ease;
+}
+div:nth-of-type(1) > div:nth-child(1):before {
+	content: "read: ";
+}
+span:before {
+	content: "read: ";
+}
+span:after {
+	content: " -Read more… ";
+	color:#f00;
+}

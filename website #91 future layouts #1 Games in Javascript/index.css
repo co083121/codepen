@@ -3,3 +3,7 @@
 	margin: 0;
 	padding: 0;
 }
+canvas {
+	background:url('https://bit.ly/2ur24d4');
+	background-size: cover;
+}

@@ -2,6 +2,28 @@
 	<link rel="stylesheet" href="./index.css">
 </head>
 <body>
-	
+	<div class="theme">
+	<button value="dark">dark</button>
+	<button value="calm">calm</button>
+	<button value="light">light</button>
+</div>
+<main>
+	<aside class="slider">
+		<label> Move this &#128071</label>
+		<input class="booth-slider" type="range" min="-50" max="50" value="-50" step="5"/>
+	</aside>
+	<section class="color-boxes">
+		<div class="color-box" id="1"><input value="red"/></div>
+		<div class="color-box" id="2"><input/></div>
+		<div class="color-box" id="3"><input/></div>
+		<div class="color-box" id="4"><input/></div>
+		<div class="color-box" id="5"><input/></div>
+		<div class="color-box" id="6"><input/></div>
+	</section>
+	<footer class="instructions">
+		&#128073; Move the slider<br/>
+		&#128073; Write any color in the red boxes.
+	</footer>
+</main>
 </body>
 <script type="text/javascript" src="./index.js"></script>

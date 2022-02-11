@@ -3,3 +3,249 @@
 	margin: 0;
 	padding: 0;
 }
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #242D35;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+$border-radius: 5px;
+
+.App {
+  background: #D9ECF0;
+  width: 700px;
+  height: 500px;
+  box-shadow: 0px 5px 15px 5px rgba(0,0,0, .25);
+  border-radius: $border-radius;
+  
+  &--dummy {
+    width: 150px;
+    height: 150px;
+    background: #bd9265;
+    border-radius: $border-radius;
+    border: 1px solid #8c5e3a;
+  }
+  
+  &__frames {
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    &-frame {
+      margin: 5px 0;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: $border-radius;
+      cursor: pointer;
+      
+      &:hover {
+        background: rgba(255, 255, 255, 0.14);
+      }
+      button {
+        border: none !important;
+        border-radius: $border-radius 0 0 $border-radius !important;
+        margin-right: 5px;
+      }
+    }
+  }
+  
+  input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #ffffff54;
+    color: #fff;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    margin: 5px 0;
+    
+    &:focus {
+      background: rgba(255,255,255, .75);
+      color: #111;
+      border: none;
+    }
+  }
+  
+  select {
+    background: transparent;
+    border: none;
+    color: #fff;
+    border-bottom: 1px dashed #ffffff54;
+    outline: none;
+    width: 85px;
+    option {
+      color: #111;
+    }
+  }
+  
+  button {
+    background: transparent;
+    padding: 5px 10px;
+    border: 1px solid #111;
+    font-size: 16px;
+    color: #111;
+    cursor: pointer;
+    transition: all .3s;
+    outline: none;
+    border-radius: $border-radius;
+    
+    &.white {
+      color: #fff;
+      border: 1px solid #fff;
+    }
+    
+    &.dash {
+      border-style: dashed;
+    }
+    &:hover {
+      background: rgba(0,0,0, .5);
+      color: #fff;
+    }
+  }
+  
+  &--presetPicker {
+    color: #fff;
+    margin-bottom: 15px;
+    select {
+      margin-left: 10px;
+      width: 100px;
+    }
+  }
+ 
+  &__sidebar {
+    height: 100%;
+    width: 200px;
+    background-color: #245a66;
+    border-radius: $border-radius 0 0 $border-radius;
+    display:inline-block;
+    vertical-align: top;
+    border-right: 1px solid #0b3b46;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    position: relative;
+    overflow: hidden;
+    
+    h2 {
+      font-size: 30px;
+      padding: 10px 0px;
+      color: #fff;
+    }
+    
+    &__newAnimation {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 350px;
+      z-index: 10;
+      width: 100%;
+      background: #0d6477;
+      box-shadow: 0px -4px 23px 0 rgba(0, 7, 8, 0.26);
+      transition: all .5s;
+      padding: 10px;
+      box-sizing: border-box;
+      color: #fff;
+      
+      h4 {
+        line-height: 30px;
+      }
+      .cssprop {
+        font-size: 14px;
+        color: #ccc;
+        cursor: pointer;
+        
+        &:hover {
+          background: rgba(255,255,255, .05);
+          border-radius: 5px;
+        }
+        span {
+          font-weight: bold;
+          color: #986cdd;
+        }
+        b {
+          color: #d1905b;
+          margin-left: 5px;
+        }
+        button {
+          padding: 3px 5px;
+          margin-right: 5px;
+          color: #bf4018;
+          border: none;
+        }
+      }
+      .newProperty {
+        input, select {
+          display: inline-block;
+        }
+        
+        input {
+          width: 85px;
+        }
+      }
+    }
+  }
+  
+  &__preview {
+    display:inline-block;
+    height: 100%;
+    width: 500px;
+    position: relative;
+    
+    &--button {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+    }
+    
+    &--stage {
+      display: flex;
+      height: 300px;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    &--code {
+      height: 200px;
+      width: 100%;
+      background: #044756;
+      position: relative;
+      button {
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+        font-size: 12px;
+      }
+      pre, code {
+        height: 100%;
+        box-sizing: border-box;
+        
+        span {
+          line-height: 18px;
+        }
+        /* width */
+        &::-webkit-scrollbar {
+          width: 10px;
+          height: 10px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track, &::-webkit-scrollbar-corner {
+          background: rgb(40, 44, 52); 
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+          background: rgba(0,0,0,.25); 
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+          background: rgba(0,0,0,.75); 
+        }
+      }
+    }
+  }
+}
